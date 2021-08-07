@@ -86,7 +86,7 @@ header nav ul{
     height: 30vw;
 	background-size: 100%;
     background-attachment:fixed;
-    background-image: url(/assets/images/about.webp);
+    background-image: url(../assets/images/about.webp);
     opacity: 0.7;
     display: flex;
     justify-content: center;

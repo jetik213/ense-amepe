@@ -80,22 +80,22 @@ header nav ul{
 	opacity:1;
 }
 .bg-computacion{
-    background-image: url(/assets/images/computacion.webp);
+    background-image: url(../assets/images/computacion.webp);
 }
 .bg-ingenieria{
-    background-image: url(/assets/images/ingenieria.webp);
+    background-image: url(../assets/images/ingenieria.webp);
 }
 .bg-medicina{
-    background-image: url(/assets/images/medicina.webp);
+    background-image: url(../assets/images/medicina.webp);
 }
 .bg-economia{
-    background-image: url(/assets/images/economia.webp);
+    background-image: url(../assets/images/economia.webp);
 }
 .bg-arte{
-    background-image: url(/assets/images/arte.webp);
+    background-image: url(../assets/images/arte.webp);
 }
 .bg-idiomas{
-    background-image: url(/assets/images/ingles.webp);
+    background-image: url(../assets/images/ingles.webp);
 }
 .fondo{
     position: relative;
