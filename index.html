@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/icons/icono.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <title>EnséñamePE</title>
 </head>
 <body>
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
     <header id="header">
         <div class="container-header">
             <div class="nav-header">
@@ -25,7 +29,7 @@
                 </ul>
             </nav>
         </div>
-        <img class="fondo" src="assets/images/fondo.webp" alt="fondo_cabecera">
+        <img id="estudiantes" class="fondo" src="assets/images/fondo.webp" alt="fondo_cabecera">
         <h1 class="title">"Que el dinero no sea una excusa para dejar de aprender"</h1>    
     </header>
 
@@ -39,7 +43,7 @@
                     </header>
                     <article>
                         <header>
-                            <img src="assets/icons/cursos_online.svg" alt="Cursos Online">
+                            <img class="otros" src="assets/icons/cursos_online.svg" alt="Cursos Online">
                         </header>
                         <div class="welcome-text-article">
                             <h4>Cursos Online</h4>
@@ -50,7 +54,7 @@
                     </article>
                     <article>
                         <header>
-                            <img src="assets/icons/instituciones.svg" alt="Instituciones">
+                            <img class="otros" src="assets/icons/instituciones.svg" alt="Instituciones">
                         </header>
                         <div class="welcome-text-article">
                             <h4>Instituciones Laureadas</h4>
@@ -61,7 +65,7 @@
                     </article>
                     <article>
                         <header>
-                            <img src="assets/icons/divulgadores.svg" alt="Divulgadores">
+                            <img class="otros" src="assets/icons/divulgadores.svg" alt="Divulgadores">
                         </header>
                         <div class="welcome-text-article">
                             <h4>Divulgadores Científicos</h4>
@@ -90,28 +94,28 @@
             </div>
             <div class="grid-container">
                <div>
-                    <a href="cursos/computacion.html" class="course-img"><img src="assets/images/computacion.webp" alt="computación"></a>
-                    <a href="cursos/computacion.html" class="course-title">Computación</a>
+                    <a href="cursos/computacion1.html" class="course-img"><img src="assets/images/computacion.webp" alt="computación"></a>
+                    <a href="cursos/computacion1.html" class="course-title">Computación</a>
                </div>
                <div>
-                    <a href="cursos/ingenieria.html" class="course-img"><img src="assets/images/ingenieria.webp" alt="ingeniería"></a>
-                    <a href="cursos/ingenieria.html" class="course-title">Ingeniería</a>
+                    <a href="cursos/ingenieria1.html" class="course-img"><img src="assets/images/ingenieria.webp" alt="ingeniería"></a>
+                    <a href="cursos/ingenieria1.html" class="course-title">Ingeniería</a>
                </div>
                <div>
-                    <a href="cursos/medicina.html" class="course-img"><img src="assets/images/medicina.webp" alt="medicina"></a>
-                    <a href="cursos/medicina.html" class="course-title">Medicina</a>
+                    <a href="cursos/medicina1.html" class="course-img"><img src="assets/images/medicina.webp" alt="medicina"></a>
+                    <a href="cursos/medicina1.html" class="course-title">Medicina</a>
                </div>
                <div>
-                    <a href="cursos/economia-finanzas.html" class="course-img"><img src="assets/images/economia.webp" alt="economía"></a>
-                    <a href="cursos/economia-finanzas.html" class="course-title">Economía y Finanzas</a>
+                    <a href="cursos/economia-finanzas1.html" class="course-img"><img src="assets/images/economia.webp" alt="economía"></a>
+                    <a href="cursos/economia-finanzas1.html" class="course-title">Economía y Finanzas</a>
                </div>
                <div>
-                    <a href="cursos/arte-diseño.html" class="course-img"><img src="assets/images/arte.webp" alt="arte"></a>
-                    <a href="cursos/arte-diseño.html" class="course-title">Arte y Diseño</a>
+                    <a href="cursos/arte-diseño1.html" class="course-img"><img src="assets/images/arte.webp" alt="arte"></a>
+                    <a href="cursos/arte-diseño1.html" class="course-title">Arte y Diseño</a>
                </div>
                <div>
-                    <a href="cursos/idiomas.html" class="course-img"><img src="assets/images/ingles.webp" alt="idiomas"></a>
-                    <a href="cursos/idiomas.html" class="course-title">Idiomas</a>
+                    <a href="cursos/idiomas1.html" class="course-img"><img src="assets/images/ingles.webp" alt="idiomas"></a>
+                    <a href="cursos/idiomas1.html" class="course-title">Idiomas</a>
                </div>
             </div>
 
@@ -148,6 +152,11 @@
             </div>
             </div>
         </div>
+        <div class="go-top-container">
+            <div class="go-top-button">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -158,22 +167,22 @@
                     </div>
                     <div class="social-icons">
                         <a href="feed.xml" target="_blank">
-                            <img src="assets/icons/rss.webp" alt="rss">
+                            <img class="redes_uni" src="assets/icons/rss.webp" alt="rss">
                         </a>
                         <a href="https://twitter.com/" target="_blank">
-                            <img src="assets/icons/twitter.webp" alt="twitter">
+                            <img class="redes_uni" src="assets/icons/twitter.webp" alt="twitter">
                         </a>
                         <a href="https://www.facebook.com/" target="_blank">
-                            <img src="assets/icons/facebook.webp" alt="facebook">
+                            <img class="redes_uni" src="assets/icons/facebook.webp" alt="facebook">
                         </a>
                         <a href="https://www.instagram.com/" target="_blank">
-                            <img src="assets/icons/instagram.webp" alt="instagram">
+                            <img class="redes_uni" src="assets/icons/instagram.webp" alt="instagram">
                         </a>
                         <a href="https://pe.linkedin.com/" target="_blank">
-                            <img src="assets/icons/linkedin.webp" alt="likedin">
+                            <img class="redes_uni" src="assets/icons/linkedin.webp" alt="likedin">
                         </a>
                         <a href="https://www.youtube.com/" target="_blank">
-                            <img src="assets/icons/youtube.webp" alt="youtube">
+                            <img class="redes_uni" src="assets/icons/youtube.webp" alt="youtube">
                         </a>
                     </div>
                 </div>
@@ -186,12 +195,14 @@
                     </ul>
                 </div>
                 <div class="column3">
-                    <h4>CURSO DE ARQUITECTURA DE ENTORNOS WEB</h4>
+                    <h4>CURSO DE DESARROLLO DE ENTORNOS WEB</h4>
                     <a href="https://www.cibertec.edu.pe/" target="_blank"><img src="assets/images/logo-cibertec.webp" alt="CIBERTEC"></a>
-                    <p>©2021 JETIK - Todos los derechos reservados</p>
+                    <p>©2021 ENSEÑAMEPE - Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
