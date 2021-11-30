@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/ico" href="assets/icons/icono.ico">
-    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" type="image/png" href="assets/icons/icono.ico">
+    <link rel="stylesheet" href="css/docentes.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <title>EnséñamePE | Contacto</title>
+    <!-- Libreria de Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>EnséñamePE | Docentes</title>
 </head>
 <body>
     <div id="contenedor_carga">
@@ -37,57 +39,30 @@
             </nav>
         </div>
         <div class="fondo">
-            <div class="title">CONTÁCTANOS</div>
+            <div class="title">Docentes Destacados</div>
         </div>
-                
+        <!-- <img class="fondo" src="assets/images/about.webp"> -->
+        
     </header>
 
     <main>
-        <div class="container">
-            <div class="container-text">
-                <section class="form_wrap">
-
-                    <section class="cantact_info">
-                        <section class="info_title">
-                            <span class="fa fa-user-circle"></span>
-                            <h2>INFORMACIÓN<br>DE CONTACTO</h2>
-                        </section>
-                        <section class="info_items">
-                            <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
-                            <p><span class="fa fa-mobile"></span> +(51) 902-866-555</p>
-                        </section>
-                    </section>
-            
-                    <form action="" class="form_contact">
-                        <h2>Contáctanos :</h2>
-                        <div class="user_info">
-                            <label for="names">Nombres *</label>
-                            <input type="text" id="names">
-            
-                            <label for="phone">Telefono / Celular</label>
-                            <input type="text" id="phone">
-            
-                            <label for="email">Correo electronico *</label>
-                            <input type="text" id="email">
-            
-                            <label for="mensaje">Mensaje *</label>
-                            <textarea id="mensaje"></textarea>
-            
-                            <input type="button" value="Enviar Mensaje" id="btnSend">
-                        </div>
-                    </form>
-            
-                </section>
-
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2530.037443578662!2d-77.04175220401427!3d-12.053761834416346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c93177909de3%3A0xd63126b8dfe444b8!2sCIBERTEC%20Lima%20Centro!5e0!3m2!1ses-419!2spe!4v1626596416010!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>         
+        <h1 class="tituloMetodos">Calificación de Profesores</h1>        
+        <div class="container">        
+            <aside>
+                <button id="add-user" class="btn"><i class="fa fa-home"></i> Agregar Profesor </button>
+                <button id="double"><i class="fa fa-bars"></i> Duplicar Valor </button>
+                <button id="show-profesores"><i class="fa fa-trash"></i> Mostrar Mejor Valorados </button>
+                <button id="sort"><i class="fa fa-close"></i> Ordenar </button>
+                <button id="calcular-puntaje"><i class="fa fa-folder"></i> Calcular calificación total </button>               
+            </aside>
+            <div id="main" class="datos">
+            </div>
         </div>
         <div class="go-top-container">
             <div class="go-top-button">
                 <i class="fa fa-chevron-up"></i>
             </div>
-        </div>  
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -133,7 +108,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/contacto.js"></script>
+    <script src="js/docentes.js"></script>
 </body>
 </html>
