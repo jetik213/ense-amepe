@@ -80,6 +80,19 @@ header nav ul{
 	opacity:1;
 }
 
+.menu-vertical{
+    position: absolute;
+    display: none;
+    background-color: rgba(37, 37, 37, 0.5);
+    box-shadow: 0px 5px 10px rgba(0,0,0,.5);   
+}
+.menu-vertical li{
+    padding-top: 4%;
+}
+.main-menu li:hover .menu-vertical{
+    display: block;
+}
+
 .fondo{
     position: relative;
     width: 100%;

@@ -13,6 +13,41 @@
     width: 100%;
     height: 10vw;
 }
+/* Cargar página */
+#contenedor_carga{
+    background-color: #eaf8f5;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: #70ACB1;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
 
 /* HEADER */
 .container-header{
@@ -83,13 +118,29 @@ header nav ul{
 	opacity:1;
 }
 
+.menu-vertical{
+    position: absolute;
+    display: none;
+    background-color: rgba(37, 37, 37, 0.5);
+    box-shadow: 0px 5px 10px rgba(0,0,0,.5);   
+}
+.menu-vertical li{
+    padding-top: 4%;
+}
+.main-menu li:hover .menu-vertical{
+    display: block;
+}
+
 .fondo{
     width: 100%;
+    opacity: 0.7;
 }
 .title{
     width: 10em;
     position: absolute;
     color: white;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 1%;
     top: 6em;
     right: 1em;
     text-align: right;
@@ -150,14 +201,46 @@ main{
     margin: auto 5px;
     box-shadow: 0px 5px 10px rgba(0,0,0,.5);
 }
+
+
+/* 
+.beneficios{
+    width: 100%;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+.transform_up{
+    transform: translateY(20%);
+}
+.aparece{
+    opacity: 1;
+    transform: none;
+}
+
+*/
+
 .image-welcome1{
     position: relative;
     text-align: right;
     z-index: 10;
+    transition: all 0.5s;
 }
 .image-welcome2{
     position: relative;
     bottom: 2em;
+    transition: all 0.5s;
+}
+.transform_down{
+    transform: translateY(-20%)
+}
+.transform_right{
+    transform: translateX(20%)
+}
+.transform_left{
+    transform: translateX(-20%)
+}
+.scroll{
+    transform: none;
 }
 
 /* CURSOS */
@@ -213,6 +296,15 @@ main{
 /* BENEFICIOS */
 .beneficios{
     width: 100%;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+.transform_up{
+    transform: translateY(20%);
+}
+.aparece{
+    opacity: 1;
+    transform: none;
 }
 .beneficios-header{
     text-align: center;
@@ -353,4 +445,67 @@ main{
 .column3 a img{
     width: 40%;
     margin: 4% 0;
+}
+
+/* GOTOP */
+.go-top-container{
+    position: fixed;
+    bottom: 1vw;
+    right: -1vw;
+    width: 4vw;
+    height: 4vw;
+    z-index: -1;
+}
+
+.go-top-button{
+    width: 0vw;
+    height: 0vw;
+    background: #4F797D;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button i{
+    position: absolute;
+    font-size: 1.2vw;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 4vw;
+    height: 4vw;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0vw;
+        height: 0vw;
+    }
+    50%{
+        width: 6vw;
+        height: 6vw;
+    }
+    100%{
+        width: 4vw;
+        height: 4vw;
+    }
 }

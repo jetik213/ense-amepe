@@ -11,6 +11,42 @@
     height: 10vw;
 }
 
+/* Cargar página */
+#contenedor_carga{
+    background-color: #eaf8f5;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: #70ACB1;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
 /* HEADER */
 .container-header{
     position: fixed;
@@ -79,6 +115,20 @@ header nav ul{
 	        transform: translateY(0px);
 	opacity:1;
 }
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    background-color: rgba(37, 37, 37, 0.5);
+    box-shadow: 0px 5px 10px rgba(0,0,0,.5);   
+}
+.menu-vertical li{
+    padding-top: 4%;
+}
+.main-menu li:hover .menu-vertical{
+    display: block;
+}
+
 .bg-computacion{
     background-image: url(../assets/images/computacion.webp);
 }
@@ -126,10 +176,9 @@ main{
     display: flex;
 }
 .grid-cursos{
-    width: 75%;
+    width: 100%;
     display: grid;
     background-color: #D7F5EE;
-    box-shadow: 0px 5px 10px rgba(0,0,0,.5);
     grid-template-columns: auto auto;
     padding-bottom: 3%;
 }
@@ -330,4 +379,71 @@ footer{
 .column3 a img{
     width: 40%;
     margin: 4% 0;
+}
+.pagination{
+    background-color: #D7F5EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.pagination ul li{
+  color: #20B2AA;
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.pagination ul li.numb{
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+.pagination ul li.numb.first{
+  margin: 0px 3px 0 -5px;
+}
+.pagination ul li.numb.last{
+  margin: 0px -5px 0 3px;
+}
+.pagination ul li.dots{
+  font-size: 22px;
+  cursor: default;
+}
+.pagination ul li.btn{
+  padding: 0 20px;
+  border-radius: 50px;
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover{
+  color: #fff;
+  background: #20B2AA;
+}
+
+/* AGREGAR ESTO PARA DAR ESTILO A LOS ENLACES DE PAGINACIÓN */
+.pagination li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.todo{
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
